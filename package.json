@@ -49,6 +49,7 @@
     "lint-staged": "^10.1.5",
     "node-sass": "^4.13.1",
     "postcss-loader": "^3.0.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.0.4",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.4",
@@ -72,7 +73,6 @@
   },
   "lint-staged": {
     "src/**/*.{jsx,txs,ts,js,json,css,md}": [
-      "echo 123",
       "prettier --write",
       "eslint --fix",
       "git add"
