@@ -72,7 +72,7 @@
   },
   "lint-staged": {
     "src/**/*.{jsx,txs,ts,js,json,css,md}": [
-      "npx eslint --fix",
+      "eslint --fix",
       "git add"
     ]
   }
