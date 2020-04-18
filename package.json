@@ -9,8 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
     "fix": "npm run format && eslint --fix --ext .js src",
-    "lint": "npm run format && npm run fix &&  eslint --ext .js src",
-    "lint:staged": "lint-staged"
+    "lint": "npm run format && npm run fix &&  eslint --ext .js src"
   },
   "browserslist": [
     "defaults",
@@ -29,6 +28,8 @@
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "autoprefixer": "^9.7.6",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
@@ -66,13 +67,15 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
   },
-  "pre-commit": "lint:staged",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "lint-staged": {
-    "linters": {
-      "*.js": [
-        "eslint --ignore-path .gitignore --fix"
-      ]
-    },
-    "ignore": []
+    "src/**/*.{jsx,txs,ts,js,json,css,md}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
