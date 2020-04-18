@@ -9,8 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
     "fix": "npm run format && eslint --fix --ext .js src",
-    "lint": "npm run format && npm run fix &&  eslint --ext .js src",
-    "precommit": "npm run lint"
+    "lint": "npm run format && npm run fix &&  eslint --ext .js src"
   },
   "browserslist": [
     "defaults",
