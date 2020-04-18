@@ -8,6 +8,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended"
     ],
+    "parser": "babel-eslint",// 解决ES6 improt会报错
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
