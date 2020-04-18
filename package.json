@@ -65,15 +65,13 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  "pre-commit": "lint:staged",
   "lint-staged": {
-    "src/**/*.{jsx,txs,ts,js,json,css,md}": [
-      "eslint --fix",
-      "git add"
-    ]
+    "linters": {
+      "*.js": [
+        "eslint --ignore-path .gitignore --fix"
+      ]
+    },
+    "ignore": []
   }
 }
