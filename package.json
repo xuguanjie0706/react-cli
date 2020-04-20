@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
     "fix": "npm run format && eslint --fix --ext .js src",
-    "lint": "npm run format && npm run fix &&  eslint --ext .js src"
+    "lint": "npm run format && npm run fix &&  eslint --ext .js src",
+    "doc": "rm -rf docs;jsdoc -c  conf.json  -r"
   },
   "browserslist": [
     "defaults",
@@ -38,6 +39,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.2",
+    "docdash": "^1.2.0",
     "eslint": "^6.8.0",
     "eslint-loader": "^4.0.0",
     "eslint-plugin-react": "^7.19.0",
@@ -46,6 +48,7 @@
     "html-webpack-plugin": "^4.2.0",
     "html-withimg-loader": "^0.1.16",
     "husky": "^4.2.5",
+    "jsdoc": "^3.6.4",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "lint-staged": "^10.1.5",
@@ -66,9 +69,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
+    "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "xl-tools": "^1.0.0"
   },
   "husky": {
     "hooks": {

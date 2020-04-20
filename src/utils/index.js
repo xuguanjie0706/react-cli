@@ -2,4 +2,6 @@
 
 // import React from "react";
 
-document.write(123456);
+export function isProduction() {
+  return global.process.env.NODE_ENV === "production";
+}
