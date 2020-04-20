@@ -15,7 +15,6 @@ import authUrls from "../authUrl";
  * @example $request(add,{age:1},"")
  */
 
-
 const $request = ({ url, data, authUrl, gateway, params, method = "post" }) => {
   if (!url) {
     throw "地址错误";

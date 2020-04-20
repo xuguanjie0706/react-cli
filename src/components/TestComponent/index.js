@@ -4,14 +4,12 @@ class Test extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: 1232
+      name: 1232,
     };
   }
   render() {
     const { name } = this.props;
-    return (
-      <div>{name}</div>
-    );
+    return <div>{name}</div>;
   }
 }
 

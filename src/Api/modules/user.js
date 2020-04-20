@@ -11,13 +11,10 @@ import $request from "../../utils/request";
  * @example $request(add,{age:1},"")
  */
 
-
 /** 获取用户信息 */
-export const getUser = data => {
+export const getUser = (data) => {
   return $request({
     url: "getuser",
-    data
+    data,
   });
 };
-
-

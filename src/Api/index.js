@@ -7,14 +7,12 @@
  * @message:
  */
 
-
 /**
-* @description 接口列表
-* @module apis
-*/
+ * @description 接口列表
+ * @module apis
+ */
 import * as user from "./modules/user";
 import * as product from "./modules/product";
-
 
 export default {
   product,
