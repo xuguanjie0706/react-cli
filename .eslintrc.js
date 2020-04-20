@@ -31,8 +31,8 @@ module.exports = {
         }
     },
     "rules": {
-        "semi": ["error", "always"],
-        "quotes": ["error", "double"],
+        "semi": [2, "always"],
+        "quotes": [1, "double"],
         "no-console": 1,
         "eqeqeq": 2,
         "default-case": 1,
@@ -58,5 +58,6 @@ module.exports = {
         "no-undef": 1,//不能有未定义的变量
         "no-unused-expressions": 1,//禁止无用的表达式
         "no-unused-vars": 1,
+        "block-scoped-var": 0, // 在块级作用域外访问块内定义的变量是否报错提示
     }
 };
