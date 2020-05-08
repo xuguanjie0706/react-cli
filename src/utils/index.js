@@ -5,8 +5,6 @@
 export function isProduction() {
   return global.process.env.NODE_ENV === "production";
 }
-
-
 function binarySearch(arr, target) {
   return search(arr, target, 0, arr.length - 1);
   function search(arr, target, from, to) {
@@ -22,10 +20,7 @@ function binarySearch(arr, target) {
       return mid;
     }
   }
-
 }
-
-
 const a = binarySearch([1, 2, 3, 6, 8], 4);
 console.log(a);
 
@@ -35,7 +30,4 @@ console.log(a);
 //   resolve({ code: 1 });
 // });
 
-
 // tb({ success: () => { }, })(34);
-
-
