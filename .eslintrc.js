@@ -43,6 +43,7 @@ module.exports = {
         "no-var": 2,               // 要求使用let const 
         "no-useless-rename": 2,      // 禁止在 import 和 export 和解构赋值时将引用重命名为相同的名字
         "no-duplicate-imports": 2,
+        "array-bracket-spacing": 2, //数组内需要空格
         "arrow-spacing": 2,// 强制箭头函数的箭头前后使用一致的空格
         "switch-colon-spacing": 2, // 强制在 switch 的冒号左右有空格
         "spaced-comment": 2, // 强制在注释中 // 或 /* 使用一致的空格
